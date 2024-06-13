@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <section class="create-todo">
-      <h3>APA YANG KAMU INGIN LAKUKAN HARI INI ??</h3>
+      <h3>APA YANG KAMU INGIN LAKUKAN HARI INI</h3>
       <form @submit.prevent="addTodo">
         <h4>MASUKAN KEGIATAN</h4>
         <input type="text" placeholder="Masukkan kegiatan" v-model="inputContent" />
