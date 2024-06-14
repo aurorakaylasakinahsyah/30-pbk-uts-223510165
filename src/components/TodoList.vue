@@ -1,26 +1,26 @@
 <template>
   <div class="body">
     <section class="create-todo">
-      <h3>APA YANG KAMU INGIN LAKUKAN HARI INI</h3>
+      <h3>MAU NONTON DRAKOR APA HARI INI?</h3>
       <form @submit.prevent="addTodo">
-        <h4>MASUKAN KEGIATAN</h4>
-        <input type="text" placeholder="Masukkan kegiatan" v-model="inputContent" />
+        <h4>List Drakor</h4>
+        <input type="text" placeholder="masukkan judul drakor" v-model="inputContent" />
         <h4>Pilih kategori:</h4>
         <div class="options">
           <label>
             <input type="radio" name="category" value="home" v-model="inputCategory" />
             <span class="bubble home"></span>
-            <div>Rumah</div>
+            <div>Romance</div>
           </label>
           <label>
             <input type="radio" name="category" value="assignment" v-model="inputCategory" />
             <span class="bubble task"></span>
-            <div>Tugas</div>
+            <div>Actions</div>
           </label>
           <label>
             <input type="radio" name="category" value="work" v-model="inputCategory" />
             <span class="bubble work"></span>
-            <div>Kerja</div>
+            <div>Horor</div>
           </label>
         </div>
         <button type="submit">Submit</button>
